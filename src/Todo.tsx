@@ -1,4 +1,3 @@
-import React from 'react';
 
 type TodoItem = {
     id: number,
@@ -13,8 +12,8 @@ export default function Todo({ todo, toggleTodo }: TodoItem | any) {
     return (
         <div className="">
             <label htmlFor="">
-                <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
-                {todo.name}
+                <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} id={todo.id}/>
+                <label htmlFor={todo.id}>{todo.name}</label>
             </label>
         </div>
     );

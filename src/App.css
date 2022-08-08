@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+    background-color: #333;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    font-size: 1.6em;
+}
+
+#root {
+    max-width: 1024px;
+    margin: 25px auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.todo-input {
+    border: 2px dashed white;
+    background-color: #222;
+    border-radius: 3px;
+    margin-right: 15px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: 1px solid white;
+    background-color: #222;
+    color: white;
+    font-family: 'JetBrains Mono';
+    transition-property: background-color, transform;
+    transition-duration: .2s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.btn:active {
+    transform: scale(.9);
+}
+
+.add {
+    margin-right: 15px;
+}
